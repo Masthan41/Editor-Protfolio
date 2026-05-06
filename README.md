@@ -10,7 +10,6 @@ Built with **React**, **Vite**, and **EmailJS**, the site is designed to showcas
 - Featured work section with local video previews
 - Sound controls for uploaded video previews
 - Services, testimonials, and about sections
-- Downloadable resume
 - Contact form powered by EmailJS
 
 ## Tech Stack
@@ -24,9 +23,6 @@ Built with **React**, **Vite**, and **EmailJS**, the site is designed to showcas
 
 ```text
 .
-|-- public/
-|   `-- assets/
-|       `-- M-A-Waheed-Resume.pdf
 |-- images/
 |   |-- pf.jpeg
 |   |-- main_pf.jpeg

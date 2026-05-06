@@ -25,9 +25,6 @@ export default function Hero() {
           <a className="btn btn-ghost" href="#contact">
             Hire Me
           </a>
-          <a className="btn btn-link" href="/assets/M-A-Waheed-Resume.pdf" download>
-            Download Resume
-          </a>
         </div>
       </div>
       <div className="hero-stats" aria-label="Portfolio highlights">
