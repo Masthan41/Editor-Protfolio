@@ -1,7 +1,7 @@
-import vid1 from "../../images/vid1.mp4";
-import vid2 from "../../images/vid2.mp4";
-import vid3 from "../../images/vid3.mp4";
-import vid4 from "../../images/vid4.mp4";
+import vid1 from "../../assets/vid1.mp4";
+import vid2 from "../../assets/vid2.mp4";
+import vid3 from "../../assets/vid3.mp4";
+import vid4 from "../../assets/vid4.mp4";
 
 export const portfolioItems = [
   {

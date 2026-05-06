@@ -1,4 +1,5 @@
 import { useState } from "react";
+import profileImage from "../../assets/pf.jpeg";
 
 const navLinks = [
   { label: "Work", href: "#work" },
@@ -13,7 +14,7 @@ export default function Header() {
   return (
     <header className="site-header">
       <a className="brand" href="#home" aria-label="M A Waheed home">
-        <span><img src="images/pf.jpeg" alt="M A Waheed" /></span>
+        <span><img src={profileImage} alt="M A Waheed" /></span>
         <strong>M A Waheed</strong>
       </a>
       <button

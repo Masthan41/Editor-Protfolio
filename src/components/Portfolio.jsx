@@ -1,5 +1,7 @@
 import { useRef, useState } from "react";
 
+const DEFAULT_VIDEO_VOLUME = 0.65;
+
 export default function Portfolio({ items }) {
   const videoItems = items.filter((item) => item.mediaType === "video");
   const imageItems = items.filter((item) => item.mediaType !== "video");
@@ -10,18 +12,26 @@ export default function Portfolio({ items }) {
         item.title,
         {
           muted: true,
-          volume: 0
+          volume: DEFAULT_VIDEO_VOLUME
         }
       ])
     )
   );
 
   function setVideoRef(title, node) {
-    if (node) {
-      videoRefs.current[title] = node;
-      node.volume = 0;
-      node.muted = true;
+    if (!node) {
+      delete videoRefs.current[title];
+      return;
     }
+
+    const settings = audioSettings[title] ?? {
+      muted: true,
+      volume: DEFAULT_VIDEO_VOLUME
+    };
+
+    videoRefs.current[title] = node;
+    node.muted = settings.muted;
+    node.volume = settings.volume;
   }
 
   function updateVideoAudio(title, nextMuted, nextVolume) {
@@ -76,7 +86,7 @@ export default function Portfolio({ items }) {
                   ref={(node) => setVideoRef(item.title, node)}
                   className="work-media"
                   src={item.src}
-                  muted
+                  muted={settings.muted}
                   loop
                   autoPlay
                   playsInline

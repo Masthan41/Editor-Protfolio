@@ -23,7 +23,7 @@ Built with **React**, **Vite**, and **EmailJS**, the site is designed to showcas
 
 ```text
 .
-|-- images/
+|-- assets/
 |   |-- pf.jpeg
 |   |-- main_pf.jpeg
 |   |-- vid1.mp4

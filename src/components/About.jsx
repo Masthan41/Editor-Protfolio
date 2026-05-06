@@ -1,3 +1,5 @@
+import mainProfileImage from "../../assets/main_pf.jpeg";
+
 const skills = ["Adobe Premiere Pro", "After Effects", "DaVinci Resolve", "Color Grading", "Motion Graphics"];
 
 export default function About() {
@@ -11,7 +13,7 @@ export default function About() {
         <div className="profile-frame reveal">
           <img
             loading="lazy"
-            src="images/main_pf.jpeg"
+            src={mainProfileImage}
             alt="Professional portrait placeholder for M A Waheed"
           />
         </div>
